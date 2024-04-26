@@ -1,0 +1,15 @@
+#Condicionales Leer el número de llantas de una compra y mostrar el valor que debe pagarse. 
+print("Compra de llantas por unidad")
+llantas = float(input("Digitar numero de llantas: "))
+if llantas < 6:
+    Compra1 = llantas*240000
+    print("el valor de llantas compradas es de: ",round(Compra1,1))
+elif llantas == 6 or llantas == 7:
+    Compra2 = llantas*221000
+    print("el valor de llantas compradas es de: ",round(Compra2,1))
+else:
+    llantas > 7
+    Compra3 = llantas*118000
+    print("el valor de llantas compradas es de: ",round(Compra3,1))
+
+

@@ -1,0 +1,11 @@
+#Condicionales tomar una decisión del tipo de pago a usar.
+print("Elija metodos de pago")
+cuenta = float(input("Digitar precio: "))
+if cuenta < 150000:
+    print("Pago en efectivo")
+elif cuenta >= 15000 and cuenta <= 300000:
+    print("Pago con celular dinero electronico(Daviplata o nequi)")
+elif cuenta > 300000 and cuenta <= 600000:
+    print("Pago con tarjeta debito")
+else:
+    print("Si ninguna cumple pago con tarjeta de credito")

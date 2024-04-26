@@ -1,0 +1,50 @@
+#Condicionales Solicitar tres números al usuario e imprimirlos en orden ascendente y descendente. 
+print("Este programa es diseñado por YASH")
+print("")
+print("Bienvenido al programa para ordenar numeros de forma ascendente o descendente")
+print("")
+print("Elija una de las siguientes opciones:")
+print("1 -> Ascendente")
+print("2 -> Descendente")
+
+orden = input("Elija un orden: ")
+
+if orden == "1" or orden == "2":
+    num1 = float(input("Digitar numero: "))
+    num2 = float(input("Digitar numero: "))
+    num3 = float(input("Digitar numero: "))
+else: 
+    print("La orden no es valida")
+
+if orden == "1": 
+    if(num1<num2 and num2<num3):
+        print("",num1," - ",num2," - ",num3)
+    elif(num2<num1 and num1<num3):
+        print("",num2," - ",num1," - ",num3)
+    elif(num3<num1 and num1<num2):
+        print("",num3," - ",num1," - ",num2)
+    elif(num3<num2 and num2<num1):
+        print("",num3," - ",num2," - ",num1)
+    elif(num1<num3 and num3<num2):
+        print("",num1," - ",num3," - ",num2)
+    elif(num2<num3 and num3<num1):
+        print("",num2," - ",num3," - ",num1)
+    else:
+        print("Numeros repetidos")
+
+elif orden == "2":
+    if num1>num2 and num2>num3:
+        print("",num1," - ",num2," - ",num3)
+    elif(num2>num1 and num1>num3):
+        print("",num2," - ",num1," - ",num3)
+    elif(num3>num1 and num1>num2):
+        print("",num3," - ",num1," - ",num2)
+    elif(num3>num2 and num2>num1):
+        print("",num3," - ",num2," - ",num1)
+    elif(num1>num3 and num3>num2):
+        print("",num1," - ",num3," - ",num2)
+    elif(num2>num3 and num3>num1):
+        print("",num2," - ",num3," - ",num1)
+    else:
+        print("Numeros repetidos")
+

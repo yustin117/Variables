@@ -1,0 +1,26 @@
+#Condicionales Numero de pulsaciones por cada 10 segundos segun el Genero.}
+print('''
+Calculadora de frecuencia cardiaca
+
+A continuación se solicitaran los siguientes datos: 
+      Edad 
+      Genero
+
+Para Edad escriba por favor un número entero
+Para Genero, escriba M si es Masculino o F si es Femenino
+
+Nota: Las letras deben ser ingresadas en Mayuscula
+''')
+
+Edad = int(input("Digite su edad actual: "))
+Genero = input("Escriba su genero (M o F): ")
+Mnumpul = (210-Edad)/10
+Fnumpul = (220-Edad)/10
+if Genero == "M":
+    Mnumpul == (210-Edad)/10
+    print("El numero de pulsaciones es de: ", round(Mnumpul,1))
+elif Genero == "F":
+    Fnumpul = (220-Edad)/10
+    print("El numero de pulsaciones es de: ", round(Fnumpul,1))
+else:
+    print("Escribe un genero que sea valido")
